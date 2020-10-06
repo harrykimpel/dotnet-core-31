@@ -12,39 +12,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -410103385,
-        "Kind": "Components.Component",
-        "Name": "dotnet_core_31.App",
-        "AssemblyName": "dotnet-core-31",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "dotnet_core_31.App"
-        }
-      },
-      {
-        "HashCode": 623128498,
-        "Kind": "Components.Component",
-        "Name": "dotnet_core_31.App",
-        "AssemblyName": "dotnet-core-31",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "dotnet_core_31.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "dotnet_core_31.App",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1171890596,
         "Kind": "Components.Component",
         "Name": "dotnet_core_31.Pages.Counter",
@@ -355,6 +322,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "dotnet_core_31.Shared.SurveyPrompt",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -410103385,
+        "Kind": "Components.Component",
+        "Name": "dotnet_core_31.App",
+        "AssemblyName": "dotnet-core-31",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "dotnet_core_31.App"
+        }
+      },
+      {
+        "HashCode": 623128498,
+        "Kind": "Components.Component",
+        "Name": "dotnet_core_31.App",
+        "AssemblyName": "dotnet-core-31",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "dotnet_core_31.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "dotnet_core_31.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
