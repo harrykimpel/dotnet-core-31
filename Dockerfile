@@ -1,10 +1,22 @@
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
-COPY bin/Release/netcoreapp3.1/publish/ App/
-WORKDIR /App
-EXPOSE 80
-#EXPOSE 5000
-#EXPOSE 5001
-#ENV ASPNETCORE_URLS=https://+:5001;http://+:5000
-#ENV ASPNETCORE_URLS http://+5000;https://+5001
-#ENV ASPNETCORE_ENVIRONMENT Production
+ARG VERSION=3.1-alpine3.10
+FROM mcr.microsoft.com/dotnet/core/sdk:$VERSION AS build-env
+WORKDIR /app
+ADD /src/*.csproj .
+RUN dotnet restore
+ADD /src .
+RUN dotnet publish \
+    -c Release \
+    -o ./output
+FROM mcr.microsoft.com/dotnet/core/aspnet:$VERSION
+RUN adduser \
+    --disabled-password \
+    --home /app \
+    --gecos '' app \
+    && chown -R app /app
+USER app
+WORKDIR /app
+COPY --from=build-env /app/output .
+ENV DOTNET_RUNNING_IN_CONTAINER=true \
+    ASPNETCORE_URLS=http://+:8080
+EXPOSE 8080
 ENTRYPOINT ["dotnet", "dotnet-core-31.dll"]
