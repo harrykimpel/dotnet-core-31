@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/dotnet-core-31.csproj",
+  "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/src/dotnet-core-31.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -11,6 +11,39 @@
   },
   "ProjectWorkspaceState": {
     "TagHelpers": [
+      {
+        "HashCode": -410103385,
+        "Kind": "Components.Component",
+        "Name": "dotnet_core_31.App",
+        "AssemblyName": "dotnet-core-31",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "dotnet_core_31.App"
+        }
+      },
+      {
+        "HashCode": 623128498,
+        "Kind": "Components.Component",
+        "Name": "dotnet_core_31.App",
+        "AssemblyName": "dotnet-core-31",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "dotnet_core_31.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "dotnet_core_31.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
       {
         "HashCode": 1171890596,
         "Kind": "Components.Component",
@@ -322,39 +355,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "dotnet_core_31.Shared.SurveyPrompt",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -410103385,
-        "Kind": "Components.Component",
-        "Name": "dotnet_core_31.App",
-        "AssemblyName": "dotnet-core-31",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "dotnet_core_31.App"
-        }
-      },
-      {
-        "HashCode": 623128498,
-        "Kind": "Components.Component",
-        "Name": "dotnet_core_31.App",
-        "AssemblyName": "dotnet-core-31",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "dotnet_core_31.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "dotnet_core_31.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -14739,54 +14739,54 @@
   "RootNamespace": "dotnet_core_31",
   "Documents": [
     {
-      "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/_Imports.razor",
-      "TargetPath": "_Imports.razor",
-      "FileKind": "componentImport"
-    },
-    {
-      "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/Shared/SurveyPrompt.razor",
-      "TargetPath": "Shared\\SurveyPrompt.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/Shared/NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/Pages/FetchData.razor",
-      "TargetPath": "Pages\\FetchData.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/Pages/Counter.razor",
+      "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/src/Pages/Counter.razor",
       "TargetPath": "Pages\\Counter.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/Pages/Index.razor",
-      "TargetPath": "Pages\\Index.razor",
+      "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/src/Shared/NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/Shared/MainLayout.razor",
+      "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/src/Pages/FetchData.razor",
+      "TargetPath": "Pages\\FetchData.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/src/Shared/MainLayout.razor",
       "TargetPath": "Shared\\MainLayout.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/App.razor",
-      "TargetPath": "App.razor",
+      "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/src/Shared/SurveyPrompt.razor",
+      "TargetPath": "Shared\\SurveyPrompt.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/Pages/Error.razor",
+      "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/src/Pages/_Host.cshtml",
+      "TargetPath": "Pages\\_Host.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/src/Pages/Index.razor",
+      "TargetPath": "Pages\\Index.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/src/Pages/Error.razor",
       "TargetPath": "Pages\\Error.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/Pages/_Host.cshtml",
-      "TargetPath": "Pages\\_Host.cshtml",
-      "FileKind": "mvc"
+      "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/src/_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "/Users/hkimpel/Projects/dotnet/dotnet-core-31/src/App.razor",
+      "TargetPath": "App.razor",
+      "FileKind": "component"
     }
   ],
   "SerializationFormat": "0.2"

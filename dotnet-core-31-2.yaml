@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapp
+  labels:
+    app: dotnet-core-31
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: webapp
+  template:
+    metadata:
+      labels:
+        app: dotnet-core-31
+        service: webapp
+    spec:
+      containers:
+        - name: webapp
+          image: harryacr.azurecr.io/dotnet-core-31:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+          env:
+            - name: ASPNETCORE_URLS
+              value: http://+:8080
+          resources:
+            limits:
+              cpu: 100m
+              memory: 256Mi
+            requests:
+              memory: 128Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: webapp
+  labels:
+    app: dotnet-core-31
+    service: webapp
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 8080
+      targetPort: 8080
+      protocol: TCP
+  selector:
+    service: webapp
